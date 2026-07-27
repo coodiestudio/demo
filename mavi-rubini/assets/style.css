@@ -1,0 +1,218 @@
+/* ═══════════════════════════════════════════════════════════════
+   MARIA VITTORIA RUBINI — anteprima Coodie.studio
+   Mix di template della libreria OS. Il viola viene dai fondali
+   che usa davvero nel suo studio.
+   · Meridian          → nav a pillola, card servizi con icona,
+                          card statistiche flottanti, kicker mono
+   · Death by Glamour  → chip filtro, griglia card, banda colorata
+   · Sonora            → marquee, citazione che si accende, footer
+   ═══════════════════════════════════════════════════════════════ */
+
+:root{
+  --bg:#fbfaf8;
+  --card:#ffffff;
+  --ink:#171420;
+  --ink-2:#453e55;
+  --muted:#736c82;
+  --line:#e9e5ef;
+
+  --violet:#7c4dbe;
+  --violet-deep:#5f3799;
+  --violet-soft:#f2ebfb;
+  --lime:#d8f24a;
+
+  --radius:20px;
+  --serif:"Fraunces",Georgia,serif;
+  --body:"Plus Jakarta Sans",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,textarea,select{font-family:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:88px 0;scroll-margin-top:110px}
+
+/* ── tipografia ───────────────────────────────────────────── */
+.display{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.025em}
+.display em{font-style:italic;color:var(--violet)}
+h2.display{font-size:clamp(2rem,4.6vw,3.4rem)}
+.kicker{font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:.55em}
+.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--violet);flex:none}
+.lead{color:var(--ink-2);font-size:1.03rem;max-width:58ch}
+
+/* ── bottoni ──────────────────────────────────────────────── */
+.btn{display:inline-flex;align-items:center;gap:.5em;border-radius:999px;padding:.88em 1.75em;font-size:.92rem;font-weight:600;border:1px solid transparent;cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s,color .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-violet{background:var(--violet);color:#fff}
+.btn-violet:hover{background:var(--violet-deep);box-shadow:0 14px 32px -14px rgba(124,77,190,.65)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{box-shadow:0 14px 30px -14px rgba(23,20,32,.6)}
+.btn-ghost{background:var(--card);color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--violet);color:var(--violet-deep)}
+
+/* ── nav a pillola (Meridian) ─────────────────────────────── */
+.topbar{position:sticky;top:0;z-index:70;padding:14px 0;transition:padding .25s}
+.topbar.stuck{padding:8px 0}
+.nav-inner{display:flex;align-items:center;gap:18px;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:999px;padding:9px 12px 9px 20px;box-shadow:0 10px 32px -20px rgba(23,20,32,.4)}
+.logo{display:flex;align-items:center;gap:.6em}
+.logo .mark{width:30px;height:30px;border-radius:10px;background:var(--violet);position:relative;flex:none}
+.logo .mark::after{content:"";position:absolute;inset:auto -4px -4px auto;width:15px;height:15px;border-radius:50%;background:var(--lime)}
+.logo .txt{display:flex;flex-direction:column;line-height:1.08}
+.logo .n{font-weight:800;font-size:.98rem;letter-spacing:-.02em}
+.logo .s{font-family:var(--mono);font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+.nav-links{display:flex;gap:2px;margin-left:auto}
+.nav-links a{padding:.5em .9em;border-radius:999px;font-size:.86rem;font-weight:500;color:var(--ink-2);transition:.15s}
+.nav-links a:hover{background:var(--violet-soft);color:var(--violet-deep)}
+.nav-cta{margin-left:6px;padding:.7em 1.3em!important;font-size:.83rem}
+.burger{display:none;margin-left:auto;background:none;border:0;padding:8px;cursor:pointer}
+.burger span{display:block;width:20px;height:1.7px;background:var(--ink);margin:5px 0;border-radius:2px;transition:.22s}
+.burger.open span:nth-child(1){transform:translateY(6.7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6.7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;inset:80px 16px auto;z-index:69;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:12px;box-shadow:0 26px 60px -26px rgba(23,20,32,.42)}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:.85em 1em;border-radius:14px;font-weight:600}
+.mobile-menu a:hover{background:var(--violet-soft)}
+@media(max-width:980px){.nav-links,.nav-cta{display:none}.burger{display:block}}
+
+/* ── hero ─────────────────────────────────────────────────── */
+.hero{padding:48px 0 0}
+.hero-top{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+@media(max-width:900px){.hero-top{grid-template-columns:1fr;gap:30px}}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1.02;letter-spacing:-.03em}
+.hero h1 em{font-style:italic;color:var(--violet)}
+.hero .lead{margin-top:18px}
+.hero-ctas{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}
+.hero-photo{position:relative;border-radius:26px;overflow:hidden;aspect-ratio:4/5;background:var(--violet-soft)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.float{position:absolute;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-radius:16px;padding:13px 17px;box-shadow:0 18px 44px -20px rgba(23,20,32,.45)}
+.float .num{font-family:var(--serif);font-size:1.5rem;font-weight:600;line-height:1}
+.float .lbl{font-family:var(--mono);font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.f-1{left:-14px;top:12%}
+.f-2{right:-10px;bottom:11%;background:var(--lime)}
+.f-2 .lbl{color:rgba(23,20,32,.62)}
+@media(max-width:900px){.f-1{left:8px}.f-2{right:8px}}
+
+/* ── marquee (Sonora) ─────────────────────────────────────── */
+.loop{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:16px 0;margin-top:56px;background:var(--card)}
+.loop-track{display:flex;white-space:nowrap;width:max-content;animation:loopmove 34s linear infinite}
+.loop:hover .loop-track{animation-play-state:paused}
+.loop-track span{font-family:var(--serif);font-weight:500;font-size:clamp(1.2rem,2.6vw,1.85rem);padding-right:.5em}
+.loop-track em{font-style:normal;color:var(--violet);padding-right:.5em}
+@keyframes loopmove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── chi sono ─────────────────────────────────────────────── */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:52px;align-items:center}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:34px}}
+.about-media{border-radius:26px;overflow:hidden;aspect-ratio:4/5;background:var(--violet-soft);position:relative}
+.about-media img{width:100%;height:100%;object-fit:cover}
+.about-media .tag{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.92);border-radius:999px;padding:.45em 1em;font-family:var(--mono);font-size:.61rem;letter-spacing:.14em;text-transform:uppercase}
+.about-text h2{margin:14px 0 18px}
+.about-text p+p{margin-top:13px}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.pill{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.5em 1em;font-family:var(--mono);font-size:.62rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+
+/* ── card servizi (Meridian) ──────────────────────────────── */
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;flex-wrap:wrap;margin-bottom:42px}
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.cards-3{grid-template-columns:1fr}}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;display:flex;flex-direction:column;gap:13px;transition:transform .22s,box-shadow .22s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 26px 52px -30px rgba(23,20,32,.35)}
+.svc .icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:var(--violet-soft);font-size:1.2rem}
+.svc:nth-child(2) .icon{background:#f5fbe0}
+.svc:nth-child(3) .icon{background:var(--ink)}
+.svc h3{font-family:var(--serif);font-weight:600;font-size:1.22rem;letter-spacing:-.015em}
+.svc p{color:var(--muted);font-size:.92rem}
+.svc ul{list-style:none;display:flex;flex-direction:column;gap:.42em;font-size:.89rem;color:var(--ink-2);margin-top:2px}
+.svc ul li::before{content:"—";color:var(--violet);margin-right:.5em}
+
+/* ── gallery + chip (Death by Glamour) ────────────────────── */
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.5em 1.15em;font-family:var(--mono);font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:.2s;color:var(--ink-2)}
+.chip:hover{border-color:var(--violet);color:var(--violet-deep)}
+.chip.active{background:var(--ink);border-color:var(--ink);color:#fff}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:960px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.gallery{grid-template-columns:1fr}}
+.shot{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--violet-soft);aspect-ratio:4/3}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.shot:hover img{transform:scale(1.05)}
+.shot::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(23,20,32,.74));opacity:0;transition:opacity .3s}
+.shot:hover::after{opacity:1}
+.shot .meta{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:17px 19px;display:flex;align-items:flex-end;justify-content:space-between;gap:10px;color:#fff;opacity:0;transform:translateY(8px);transition:.3s}
+.shot:hover .meta{opacity:1;transform:none}
+.shot .meta .t{font-family:var(--serif);font-weight:600;font-size:1.02rem}
+.shot .meta .c{font-family:var(--mono);font-size:.56rem;letter-spacing:.15em;text-transform:uppercase;color:#dcc9f7;white-space:nowrap}
+.shot.hide{display:none}
+
+/* ── banda viola (Death by Glamour) ───────────────────────── */
+.band{background:var(--violet);color:#fff;border-radius:34px;margin:0 24px;padding:72px 0}
+@media(max-width:600px){.band{border-radius:22px;margin:0 14px}}
+.band .kicker{color:rgba(255,255,255,.72)}
+.band .kicker::before{background:var(--lime)}
+.band h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,3.8vw,2.7rem);line-height:1.12;margin-top:14px;max-width:22ch}
+.band h2 em{font-style:italic;color:var(--lime)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:44px;border-top:1px solid rgba(255,255,255,.24);padding-top:34px}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr);gap:28px}}
+.stat .num{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1}
+.stat .lbl{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-top:8px}
+
+/* ── citazione (Sonora) ───────────────────────────────────── */
+.quote-sec{text-align:center}
+.bigquote{max-width:880px;margin:0 auto}
+.bigquote p{font-family:var(--serif);font-weight:500;font-size:clamp(1.4rem,3.2vw,2.4rem);line-height:1.26;letter-spacing:-.018em}
+.bigquote .w{opacity:.2;transition:opacity .45s}
+.bigquote .w.lit{opacity:1}
+.bigquote .accent{color:var(--violet)}
+.bigquote .who{margin-top:26px;font-family:var(--mono);font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* ── contatti ─────────────────────────────────────────────── */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:start}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:36px}}
+.c-item{display:block;padding:17px 0;border-bottom:1px solid var(--line)}
+.c-item:first-child{border-top:1px solid var(--line)}
+.c-item .lbl{font-family:var(--mono);font-size:.61rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.c-item .val{font-family:var(--serif);font-weight:600;font-size:1.2rem;line-height:1.3;transition:color .2s}
+a.c-item:hover .val{color:var(--violet-deep)}
+.cform{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:30px}
+@media(max-width:600px){.cform{padding:22px}}
+.cform .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:560px){.cform .two{grid-template-columns:1fr}}
+.cform .field{margin-bottom:18px}
+.cform label{display:block;font-family:var(--mono);font-size:.61rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.cform input,.cform textarea,.cform select{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--ink);font-size:.97rem;padding:.75em .9em;outline:none;transition:.2s;resize:vertical}
+.cform input:focus,.cform textarea:focus,.cform select:focus{border-color:var(--violet);box-shadow:0 0 0 3px rgba(124,77,190,.16)}
+.cform .note{font-size:.79rem;color:var(--muted);margin-top:13px}
+
+/* ── footer ───────────────────────────────────────────────── */
+footer{background:var(--ink);color:#fff;padding:62px 0 28px;margin-top:76px}
+.foot-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:38px;padding-bottom:40px}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.foot-grid{grid-template-columns:1fr}}
+.foot-brand .n{font-family:var(--serif);font-weight:600;font-size:1.5rem}
+.foot-brand .n em{font-style:italic;color:#c9a8f2}
+.foot-brand p{color:rgba(255,255,255,.55);font-size:.86rem;max-width:32ch;margin-top:11px}
+.foot-col .t{font-family:var(--mono);font-size:.61rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:13px}
+.foot-col a{display:block;color:rgba(255,255,255,.82);font-size:.88rem;padding:.28em 0;transition:.15s}
+.foot-col a:hover{color:#fff;padding-left:5px}
+.foot-base{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);font-family:var(--mono);font-size:.62rem;letter-spacing:.07em;color:rgba(255,255,255,.5)}
+.foot-base a:hover{color:#c9a8f2}
+
+/* ── badge anteprima ──────────────────────────────────────── */
+.preview-flag{position:fixed;right:16px;bottom:16px;z-index:90;background:rgba(23,20,32,.92);backdrop-filter:blur(10px);border-radius:999px;padding:.62em 1.1em;font-family:var(--mono);font-size:.57rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.86);display:flex;align-items:center;gap:.6em;opacity:0;transform:translateY(10px);pointer-events:none;transition:.35s}
+.preview-flag.show{opacity:1;transform:none;pointer-events:auto}
+.preview-flag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime);flex:none}
+@media(max-width:600px){.preview-flag{display:none}}
+
+/* ── reveal ───────────────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .72s ease,transform .72s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .loop-track{animation:none}
+  .bigquote .w{opacity:1}
+}
