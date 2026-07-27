@@ -180,3 +180,21 @@ footer{background:var(--black);border-top:1px solid var(--line-soft);padding:62p
 .rv{opacity:0;transform:translateY(22px);transition:opacity .75s ease,transform .75s ease}
 .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ── listino vero, in tabella ─────────────────────────────── */
+.price-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:38px}
+@media(max-width:860px){.price-groups{grid-template-columns:1fr}}
+.pg{background:#fff;border:1px solid var(--paper-line);border-radius:16px;padding:24px 22px}
+.pg .h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px}
+.pg h3{font-size:1.2rem;color:var(--paper-ink);letter-spacing:-.01em}
+.pg .sub{font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-2)}
+.pg table{width:100%;border-collapse:collapse;font-size:.92rem}
+.pg caption{text-align:left;font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--paper-2);padding:12px 0 6px;border-top:1px solid var(--paper-line)}
+.pg tbody tr{border-bottom:1px solid #f0ebe2}
+.pg tbody tr:last-child{border-bottom:0}
+.pg th{text-align:left;font-weight:500;color:var(--paper-ink);padding:7px 0}
+.pg td{text-align:right;color:var(--paper-2);padding:7px 0;white-space:nowrap;font-variant-numeric:tabular-nums}
+.pg tr.add th,.pg tr.add td{color:#a4691f}
+.price-from{display:inline-flex;align-items:baseline;gap:.5em;background:var(--paper-ink);color:#fff;border-radius:999px;padding:.55em 1.2em;margin-top:20px}
+.price-from b{font-weight:500;font-size:1.05rem}
+.price-from span{font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;opacity:.72}
