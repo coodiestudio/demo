@@ -8,305 +8,255 @@
 <!-- Anteprima privata per il cliente: fuori dagli indici, cosi le loro
      fotografie non compaiono nei risultati sotto un dominio non loro. -->
 <meta name="robots" content="noindex, nofollow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<!-- ═══ NAV A PILLOLA (Meridian) ═══ -->
-<div class="topbar" id="topbar">
-  <div class="wrap">
-    <div class="nav-inner">
-      <a href="#top" class="logo">
-        <span class="n">One Shot</span>
-        <span class="s">Photography</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#servizi">Cosa facciamo</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#spazio">Spazio eventi</a>
-        <a href="#chi-siamo">Chi siamo</a>
-        <a href="#contatti">Contatti</a>
-      </nav>
-      <a href="#contatti" class="btn btn-blue nav-cta">Contattaci</a>
+<!-- ═══ NAV ═══ -->
+<nav class="top">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo">One Shot <small>Photography</small></a>
+    <div class="nav-links">
+      <a href="#lavoro">Il lavoro</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#spazio">Spazio eventi</a>
+      <a href="#chi-siamo">Chi siamo</a>
+      <a href="#contatti">Contatti</a>
+    </div>
+    <div class="nav-right">
+      <a href="#contatti" class="btn">Contattaci</a>
       <button class="burger" id="burger" aria-label="Apri il menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-</div>
+</nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#servizi">Cosa facciamo</a>
+  <a href="#lavoro">Il lavoro</a>
   <a href="#portfolio">Portfolio</a>
   <a href="#spazio">Spazio eventi</a>
   <a href="#chi-siamo">Chi siamo</a>
   <a href="#contatti">Contatti</a>
 </div>
 
-<!-- ═══ HERO A CIELO (Meridian) ═══ -->
+<!-- ═══ HERO EDITORIALE ═══ -->
 <header class="hero" id="top">
-  <div class="sky"></div>
   <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <span class="kicker">Fotografia di spettacolo · Milano</span>
-        <h1>Far rivivere <em>la magia</em> dello spettacolo.</h1>
-        <p class="lead">Le foto di un concerto, di un balletto, di una commedia non hanno solo il compito di descrivere. Lavoriamo per teatri, compagnie, produzioni e artisti, in tutta Italia e all'estero.</p>
-        <div class="hero-ctas">
-          <a href="#portfolio" class="btn">Guarda il portfolio</a>
-          <a href="#spazio" class="btn btn-ghost">Scopri lo spazio eventi</a>
-        </div>
-      </div>
-      <div class="hero-media">
-        <img src="assets/img/spett-1.jpg" alt="Danzatrice in scena sotto una colonna di tessuto illuminata, fotografia di spettacolo" fetchpriority="high">
-        <div class="float f-1">
-          <div class="n">Milano</div>
-          <div class="l">Via Cenisio 70</div>
-        </div>
-        <div class="float f-2">
-          <div class="n">7/7</div>
-          <div class="l">Su appuntamento</div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <p class="eyebrow">Fotografia di spettacolo &middot; Milano</p>
+    <h1>Far rivivere <em>la magia</em> dello spettacolo.</h1>
 
-  <!-- striscia produzioni (Meridian .logos) -->
-  <div class="wrap strip">
-    <p>Alcune delle produzioni che abbiamo fotografato</p>
-    <div class="strip-row">
-      <span>Kataklo Athletic Dance Theatre</span>
-      <span>RBR Dance Company</span>
-      <span>Luca Ronconi</span>
-      <span>Noel Gallagher</span>
-      <span>Trofeo di Milano</span>
+    <div class="hero-grid">
+      <div class="hero-img">
+        <img src="assets/img/spett-1.jpg" alt="Danzatrice in scena sotto una colonna di tessuto illuminata, fotografia di spettacolo" fetchpriority="high">
+      </div>
+      <div class="hero-side">
+        <div class="note-card acid">
+          <p class="q">Le foto di un concerto, di un balletto, di una commedia non hanno solo il compito di descrivere.</p>
+          <p class="who">One Shot Photography</p>
+        </div>
+        <div class="note-card">
+          <div class="rows">
+            <div><b>Studio</b><span>Via Cenisio 70, Milano</span></div>
+            <div><b>Orari</b><span>7 giorni su 7, su appuntamento</span></div>
+            <div><b>Raggio</b><span>Italia ed estero</span></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- ═══ STATEMENT A PAROLE (Meridian) ═══ -->
-<section style="padding:56px 0">
-  <div class="statement">
-    <div class="inner">
-      <p class="big" id="quote"><span>Le foto di un concerto, di un balletto, di una commedia non hanno solo il compito di descrivere,</span> <span class="accent">ma di far rivivere la grande magia dello spettacolo.</span></p>
-      <div class="who">One Shot Photography</div>
-    </div>
+<!-- ═══ IL LAVORO ═══ -->
+<section class="section wrap" id="lavoro">
+  <p class="eyebrow">Il lavoro</p>
+  <h2 class="big">Tre mestieri, <em>una sola squadra</em></h2>
+  <p class="lead" style="margin-top:18px">Un piccolo studio di Milano che lavora su tutto il territorio nazionale e all'estero, per privati e per aziende.</p>
+
+  <div class="index rv" style="margin-top:38px">
+    <a class="row" href="#portfolio">
+      <span class="n">01</span>
+      <h3>Spettacolo</h3>
+      <p>Concerti, balletti, teatro. Anni di collaborazioni con agenzie, produzioni, scuole di ballo, teatri e compagnie.</p>
+      <span class="meta">Italia ed estero</span>
+    </a>
+    <a class="row" href="#portfolio">
+      <span class="n">02</span>
+      <h3>Eventi</h3>
+      <p>Eventi per privati e per aziende, seguiti con un servizio professionale che non si mette mai in mezzo.</p>
+      <span class="meta">Privati e aziende</span>
+    </a>
+    <a class="row" href="#portfolio">
+      <span class="n">03</span>
+      <h3>Matrimoni</h3>
+      <p>Semplicita e naturalezza. Crediamo nella forza narrativa delle immagini che una dopo l'altra costruiscono una storia.</p>
+      <span class="meta">Cerimonie</span>
+    </a>
+  </div>
+
+  <div class="credits rv">
+    <p class="t">Alcune delle produzioni che abbiamo fotografato</p>
+    <ul>
+      <li>Kataklo Athletic Dance Theatre</li>
+      <li>RBR Dance Company</li>
+      <li>Luca Ronconi</li>
+      <li>Noel Gallagher</li>
+      <li>Trofeo di Milano</li>
+    </ul>
   </div>
 </section>
 
-<!-- ═══ SERVIZI (Meridian cards) ═══ -->
-<section id="servizi" style="padding-top:24px">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div>
-        <span class="kicker">Cosa facciamo</span>
-        <h2 class="serif" style="margin-top:13px">Tre mestieri, <em>una sola squadra</em></h2>
-      </div>
-      <p class="lead">Un piccolo studio di Milano che lavora su tutto il territorio nazionale e all'estero, per privati e per aziende.</p>
+<!-- ═══ PORTFOLIO ═══ -->
+<section class="section wrap" id="portfolio" style="padding-top:0">
+  <div class="shop-head">
+    <div>
+      <p class="eyebrow">Portfolio</p>
+      <h2 class="big">Una selezione <em>di scatti</em></h2>
     </div>
+    <div class="filters" id="chips">
+      <button class="chip active" data-filter="all">Tutti</button>
+      <button class="chip" data-filter="spett">Spettacolo</button>
+      <button class="chip" data-filter="event">Eventi</button>
+      <button class="chip" data-filter="matr">Matrimoni</button>
+    </div>
+  </div>
 
-    <div class="cards-3">
-      <div class="svc rv">
-        <div class="icon">&#9679;</div>
-        <h3>Spettacolo</h3>
-        <p>Concerti, balletti, teatro. Anni di collaborazioni con agenzie, produzioni, scuole di ballo, teatri e compagnie.</p>
-        <span class="tag">Italia ed estero</span>
-      </div>
-      <div class="svc rv">
-        <div class="icon">&#9679;</div>
-        <h3>Eventi</h3>
-        <p>Eventi per privati e per aziende, seguiti con un servizio professionale che non si mette mai in mezzo.</p>
-        <span class="tag">Privati e aziende</span>
-      </div>
-      <div class="svc rv">
-        <div class="icon">&#9679;</div>
-        <h3>Matrimoni</h3>
-        <p>Semplicita e naturalezza. Crediamo nella forza narrativa delle immagini che una dopo l'altra costruiscono una storia.</p>
-        <span class="tag">Cerimonie</span>
-      </div>
-    </div>
+  <div class="products rv" id="gallery">
+    <div class="product" data-cat="spett"><div class="p-img"><img src="assets/img/spett-2.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><h3>In scena</h3><p class="cat">Spettacolo</p></div>
+    <div class="product" data-cat="spett"><div class="p-img"><img src="assets/img/spett-3.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><h3>In scena</h3><p class="cat">Spettacolo</p></div>
+    <div class="product" data-cat="matr"><div class="p-img"><img src="assets/img/matr-1.jpg" alt="Scatto dalla sezione Matrimoni" loading="lazy"></div><h3>Cerimonia</h3><p class="cat">Matrimoni</p></div>
+    <div class="product" data-cat="event"><div class="p-img"><img src="assets/img/event-1.jpg" alt="Scatto dalla sezione Eventi" loading="lazy"></div><h3>Evento</h3><p class="cat">Eventi</p></div>
+    <div class="product" data-cat="spett"><div class="p-img"><img src="assets/img/spett-4.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><h3>In scena</h3><p class="cat">Spettacolo</p></div>
+    <div class="product" data-cat="spett"><div class="p-img"><img src="assets/img/spett-5.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><h3>In scena</h3><p class="cat">Spettacolo</p></div>
+    <div class="product" data-cat="matr"><div class="p-img"><img src="assets/img/matr-2.jpg" alt="Scatto dalla sezione Matrimoni" loading="lazy"></div><h3>Cerimonia</h3><p class="cat">Matrimoni</p></div>
+    <div class="product" data-cat="event"><div class="p-img"><img src="assets/img/event-2.jpg" alt="Scatto dalla sezione Eventi" loading="lazy"></div><h3>Evento</h3><p class="cat">Eventi</p></div>
+    <div class="product" data-cat="spett"><div class="p-img"><img src="assets/img/spett-6.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><h3>In scena</h3><p class="cat">Spettacolo</p></div>
+    <div class="product" data-cat="matr"><div class="p-img"><img src="assets/img/matr-3.jpg" alt="Scatto dalla sezione Matrimoni" loading="lazy"></div><h3>Cerimonia</h3><p class="cat">Matrimoni</p></div>
+    <div class="product" data-cat="event"><div class="p-img"><img src="assets/img/event-3.jpg" alt="Scatto dalla sezione Eventi" loading="lazy"></div><h3>Evento</h3><p class="cat">Eventi</p></div>
+    <div class="product" data-cat="spett"><div class="p-img"><img src="assets/img/spett-7.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><h3>In scena</h3><p class="cat">Spettacolo</p></div>
+    <div class="product" data-cat="matr"><div class="p-img"><img src="assets/img/matr-4.jpg" alt="Scatto dalla sezione Matrimoni" loading="lazy"></div><h3>Cerimonia</h3><p class="cat">Matrimoni</p></div>
+    <div class="product" data-cat="event"><div class="p-img"><img src="assets/img/event-4.jpg" alt="Scatto dalla sezione Eventi" loading="lazy"></div><h3>Evento</h3><p class="cat">Eventi</p></div>
+    <div class="product" data-cat="matr"><div class="p-img"><img src="assets/img/matr-5.jpg" alt="Scatto dalla sezione Matrimoni" loading="lazy"></div><h3>Cerimonia</h3><p class="cat">Matrimoni</p></div>
   </div>
 </section>
 
-<!-- ═══ PORTFOLIO (Death by Glamour) ═══ -->
-<section id="portfolio">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div>
-        <span class="kicker">Portfolio</span>
-        <h2 class="serif" style="margin-top:13px">Una selezione <em>di scatti</em></h2>
-      </div>
-      <div class="chips" id="chips">
-        <button class="chip active" data-filter="all">Tutti</button>
-        <button class="chip" data-filter="spett">Spettacolo</button>
-        <button class="chip" data-filter="event">Eventi</button>
-        <button class="chip" data-filter="matr">Matrimoni</button>
-      </div>
-    </div>
-
-    <div class="grid rv" id="gallery">
-      <div class="item" data-cat="spett"><div class="ph"><img src="assets/img/spett-2.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><div class="foot"><h3>In scena</h3><span class="cat">Spettacolo</span></div></div>
-      <div class="item" data-cat="spett"><div class="ph"><img src="assets/img/spett-3.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><div class="foot"><h3>In scena</h3><span class="cat">Spettacolo</span></div></div>
-      <div class="item" data-cat="matr"><div class="ph"><img src="assets/img/matr-1.jpg" alt="Scatto dalla sezione Matrimoni" loading="lazy"></div><div class="foot"><h3>Cerimonia</h3><span class="cat">Matrimoni</span></div></div>
-      <div class="item" data-cat="event"><div class="ph"><img src="assets/img/event-1.jpg" alt="Scatto dalla sezione Eventi" loading="lazy"></div><div class="foot"><h3>Evento</h3><span class="cat">Eventi</span></div></div>
-      <div class="item" data-cat="spett"><div class="ph"><img src="assets/img/spett-4.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><div class="foot"><h3>In scena</h3><span class="cat">Spettacolo</span></div></div>
-      <div class="item" data-cat="spett"><div class="ph"><img src="assets/img/spett-5.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><div class="foot"><h3>In scena</h3><span class="cat">Spettacolo</span></div></div>
-      <div class="item" data-cat="matr"><div class="ph"><img src="assets/img/matr-2.jpg" alt="Scatto dalla sezione Matrimoni" loading="lazy"></div><div class="foot"><h3>Cerimonia</h3><span class="cat">Matrimoni</span></div></div>
-      <div class="item" data-cat="event"><div class="ph"><img src="assets/img/event-2.jpg" alt="Scatto dalla sezione Eventi" loading="lazy"></div><div class="foot"><h3>Evento</h3><span class="cat">Eventi</span></div></div>
-      <div class="item" data-cat="spett"><div class="ph"><img src="assets/img/spett-6.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><div class="foot"><h3>In scena</h3><span class="cat">Spettacolo</span></div></div>
-      <div class="item" data-cat="matr"><div class="ph"><img src="assets/img/matr-3.jpg" alt="Scatto dalla sezione Matrimoni" loading="lazy"></div><div class="foot"><h3>Cerimonia</h3><span class="cat">Matrimoni</span></div></div>
-      <div class="item" data-cat="event"><div class="ph"><img src="assets/img/event-3.jpg" alt="Scatto dalla sezione Eventi" loading="lazy"></div><div class="foot"><h3>Evento</h3><span class="cat">Eventi</span></div></div>
-      <div class="item" data-cat="spett"><div class="ph"><img src="assets/img/spett-7.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy"></div><div class="foot"><h3>In scena</h3><span class="cat">Spettacolo</span></div></div>
-      <div class="item" data-cat="matr"><div class="ph"><img src="assets/img/matr-4.jpg" alt="Scatto dalla sezione Matrimoni" loading="lazy"></div><div class="foot"><h3>Cerimonia</h3><span class="cat">Matrimoni</span></div></div>
-      <div class="item" data-cat="event"><div class="ph"><img src="assets/img/event-4.jpg" alt="Scatto dalla sezione Eventi" loading="lazy"></div><div class="foot"><h3>Evento</h3><span class="cat">Eventi</span></div></div>
-      <div class="item" data-cat="matr"><div class="ph"><img src="assets/img/matr-5.jpg" alt="Scatto dalla sezione Matrimoni" loading="lazy"></div><div class="foot"><h3>Cerimonia</h3><span class="cat">Matrimoni</span></div></div>
-    </div>
+<!-- ═══ BANDA ACIDA ═══ -->
+<section class="wrap">
+  <div class="band">
+    <h2 id="quote"><span>Non descrivere soltanto,</span> <span class="em">ma far rivivere la grande magia dello spettacolo.</span></h2>
+    <p class="who">Il nostro modo di lavorare</p>
   </div>
 </section>
 
-<!-- ═══ BANDA ACIDA: SPAZIO EVENTI (Death by Glamour) ═══ -->
-<section id="spazio" style="padding:20px 0">
-  <div class="band rv">
-    <div class="wrap">
-      <span class="kicker">Spazio eventi</span>
-      <h2>Non solo fotografi: abbiamo anche la location.</h2>
-      <p class="lead">Uno spazio espositivo in via Cenisio 70. La parte sottostante, con i soffitti a volta e i mattoni a vista, lo rende molto caratteristico, in stile bottega.</p>
-
-      <div class="band-grid">
-        <div class="band-media">
-          <img src="assets/img/spazio-1.jpg" alt="Sala con soffitto a volta in mattoni a vista dello spazio eventi" loading="lazy">
-        </div>
-        <div>
-          <div class="uses">
-            <span class="use">Mostre</span>
-            <span class="use">Temporary store</span>
-            <span class="use">Showroom</span>
-            <span class="use">Spot pubblicitari</span>
-            <span class="use">Servizi fotografici</span>
-            <span class="use">Workshop</span>
-          </div>
-          <div class="band-rows">
-            <div><b>Dove</b><p>Via Cenisio 70, Milano</p></div>
-            <div><b>Distanze</b><p>1,7 km da Gae Aulenti, 1,5 km dall'Arco della Pace</p></div>
-            <div><b>Metro</b><p>MM5 lilla, Cenisio o Gerusalemme</p></div>
-            <div><b>Mezzi</b><p>Tram 1, 14 e 19. Bus 43 e 57</p></div>
-          </div>
-          <a href="#contatti" class="btn" style="margin-top:22px">Verifica la disponibilita</a>
-        </div>
-      </div>
+<!-- ═══ SPAZIO EVENTI ═══ -->
+<section class="section wrap" id="spazio">
+  <div class="split">
+    <div class="split-img rv">
+      <img src="assets/img/spazio-1.jpg" alt="Sala con soffitto a volta in mattoni a vista dello spazio eventi" loading="lazy">
     </div>
-  </div>
-</section>
+    <div class="rv">
+      <p class="eyebrow">Spazio eventi</p>
+      <h2 class="big">Non solo fotografi: <em>abbiamo anche la location</em></h2>
+      <p class="lead" style="margin-top:18px">Uno spazio espositivo in via Cenisio 70. La parte sottostante, con i soffitti a volta e i mattoni a vista, lo rende molto caratteristico, in stile bottega.</p>
 
-<!-- ═══ BANDA NUMERI (Meridian) ═══ -->
-<section style="padding:20px 0">
-  <div class="stats-band rv">
-    <div class="wrap">
-      <div class="stats">
-        <div class="stat"><div class="n">3</div><div class="l">Ambiti di lavoro</div></div>
-        <div class="stat"><div class="n"><em>7/7</em></div><div class="l">Su appuntamento</div></div>
-        <div class="stat"><div class="n">1</div><div class="l">Spazio eventi</div></div>
-        <div class="stat"><div class="n"><em>Estero</em></div><div class="l">Oltre a tutta Italia</div></div>
+      <div class="tags">
+        <span class="tag">Mostre</span>
+        <span class="tag">Temporary store</span>
+        <span class="tag">Showroom</span>
+        <span class="tag">Spot pubblicitari</span>
+        <span class="tag">Servizi fotografici</span>
+        <span class="tag">Workshop</span>
       </div>
+
+      <div class="specs">
+        <div><b>Dove</b><span>Via Cenisio 70, Milano</span></div>
+        <div><b>Distanze</b><span>1,7 km da Gae Aulenti, 1,5 km dall'Arco della Pace</span></div>
+        <div><b>Metro</b><span>MM5 lilla, Cenisio o Gerusalemme</span></div>
+        <div><b>Mezzi</b><span>Tram 1, 14 e 19. Bus 43 e 57</span></div>
+      </div>
+
+      <a href="#contatti" class="btn" style="margin-top:26px">Verifica la disponibilita</a>
     </div>
   </div>
 </section>
 
 <!-- ═══ CHI SIAMO ═══ -->
-<section id="chi-siamo">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div>
-        <span class="kicker">Chi siamo</span>
-        <h2 class="serif" style="margin-top:13px">Piccoli <em>e mai invadenti</em></h2>
-      </div>
-      <p class="lead">Siamo un piccolo studio fotografico di Milano. I nostri clienti cercano nei nostri scatti la semplicita e la spontaneita dei momenti che meritano di essere ricordati.</p>
+<section class="section wrap" id="chi-siamo" style="padding-top:0">
+  <div class="quote-grid">
+    <div class="quote-img rv">
+      <img src="assets/img/spett-5.jpg" alt="Scatto dalla sezione Spettacoli" loading="lazy">
     </div>
-
-    <div class="people rv">
-      <a class="person" href="https://wa.me/393386194792" target="_blank" rel="noopener">
-        <span class="av">D</span>
-        <span>
-          <span class="nm">Davide</span>
-          <span class="ph">+39 338 6194792 · WhatsApp</span>
-        </span>
-      </a>
-      <a class="person" href="tel:+393465765503">
-        <span class="av">M</span>
-        <span>
-          <span class="nm">Marta</span>
-          <span class="ph">+39 346 5765503</span>
-        </span>
-      </a>
+    <div class="quote-box rv">
+      <p>Siamo un piccolo studio di Milano. I nostri clienti cercano nei nostri scatti la semplicita e la spontaneita dei momenti che meritano di essere ricordati.</p>
+      <p class="who">Chi siamo</p>
+      <div class="people">
+        <a href="https://wa.me/393386194792" target="_blank" rel="noopener"><b>Davide</b><span>338 6194792</span></a>
+        <a href="tel:+393465765503"><b>Marta</b><span>346 5765503</span></a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ═══ CONTATTI ═══ -->
-<section id="contatti" style="padding-top:24px">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div>
-        <span class="kicker">Contatti</span>
-        <h2 class="serif" style="margin-top:13px">Raccontaci <em>il progetto</em></h2>
+<section class="section wrap" id="contatti" style="padding-top:0">
+  <div class="shop-head">
+    <div>
+      <p class="eyebrow">Contatti</p>
+      <h2 class="big">Raccontaci <em>il progetto</em></h2>
+    </div>
+    <p class="lead" style="max-width:38ch">Riceviamo 7 giorni su 7 previo appuntamento. Scrivici su WhatsApp o via mail.</p>
+  </div>
+
+  <div class="contact">
+    <div class="rv">
+      <a class="c-item" href="mailto:info@oneshotphotography.it">
+        <div class="lbl">Email</div>
+        <div class="val">info@oneshotphotography.it</div>
+      </a>
+      <a class="c-item" href="https://wa.me/393386194792" target="_blank" rel="noopener">
+        <div class="lbl">WhatsApp</div>
+        <div class="val">338 6194792</div>
+      </a>
+      <div class="c-item">
+        <div class="lbl">Studio e spazio eventi</div>
+        <div class="val">Via Cenisio 70<br>20154 Milano</div>
       </div>
-      <p class="lead">Riceviamo 7 giorni su 7 previo appuntamento. Scrivici su WhatsApp o via mail.</p>
+      <div class="c-item">
+        <div class="lbl">Orari</div>
+        <div class="val">7 giorni su 7, su appuntamento</div>
+      </div>
+      <div class="c-item">
+        <div class="lbl">Come arrivare</div>
+        <div class="val">MM5 lilla, Cenisio o Gerusalemme</div>
+      </div>
     </div>
 
-    <div class="contact-grid">
-      <div class="rv">
-        <a class="c-item" href="mailto:info@oneshotphotography.it">
-          <div class="lbl">Email</div>
-          <div class="val">info@oneshotphotography.it</div>
-        </a>
-        <a class="c-item" href="https://wa.me/393386194792" target="_blank" rel="noopener">
-          <div class="lbl">WhatsApp</div>
-          <div class="val">338 6194792</div>
-        </a>
-        <div class="c-item">
-          <div class="lbl">Studio e spazio eventi</div>
-          <div class="val">Via Cenisio 70<br>20154 Milano</div>
-        </div>
-        <div class="c-item">
-          <div class="lbl">Orari</div>
-          <div class="val">7 giorni su 7, su appuntamento</div>
-        </div>
-        <div class="c-item">
-          <div class="lbl">Come arrivare</div>
-          <div class="val">MM5 lilla, Cenisio o Gerusalemme</div>
+    <form class="cform rv" id="cform">
+      <div class="two">
+        <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+      </div>
+      <div class="two">
+        <div class="field"><label for="data">Data</label><input id="data" name="data" type="date"></div>
+        <div class="field">
+          <label for="tipo">Di cosa si tratta</label>
+          <select id="tipo" name="tipo">
+            <option>Spettacolo o concerto</option>
+            <option>Evento aziendale</option>
+            <option>Matrimonio o cerimonia</option>
+            <option>Noleggio dello spazio eventi</option>
+            <option>Servizio fotografico</option>
+            <option>Altro</option>
+          </select>
         </div>
       </div>
-
-      <form class="cform rv" id="cform">
-        <div class="two">
-          <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" required></div>
-          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
-        </div>
-        <div class="two">
-          <div class="field"><label for="data">Data</label><input id="data" name="data" type="date"></div>
-          <div class="field">
-            <label for="tipo">Di cosa si tratta</label>
-            <select id="tipo" name="tipo">
-              <option>Spettacolo o concerto</option>
-              <option>Evento aziendale</option>
-              <option>Matrimonio o cerimonia</option>
-              <option>Noleggio dello spazio eventi</option>
-              <option>Servizio fotografico</option>
-              <option>Altro</option>
-            </select>
-          </div>
-        </div>
-        <div class="field"><label for="messaggio">Raccontaci</label><textarea id="messaggio" name="messaggio" rows="4" required></textarea></div>
-        <button type="submit" class="btn btn-blue">Invia la richiesta</button>
-        <p class="note" id="formNote">Anteprima dimostrativa: il modulo non invia ancora messaggi.</p>
-      </form>
-    </div>
+      <div class="field"><label for="messaggio">Raccontaci</label><textarea id="messaggio" name="messaggio" rows="4" required></textarea></div>
+      <button type="submit" class="btn">Invia la richiesta</button>
+      <p class="note" id="formNote">Anteprima dimostrativa: il modulo non invia ancora messaggi.</p>
+    </form>
   </div>
 </section>
 
-<!-- ═══ FOOTER (Death by Glamour) ═══ -->
+<!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="wrap">
     <div class="foot-top">
@@ -323,7 +273,7 @@
         <p>Studio fotografico di Milano. Spettacolo, eventi e cerimonie, in tutta Italia e all'estero.</p>
       </div>
       <div class="foot-col">
-        <div class="t">Cosa facciamo</div>
+        <div class="t">Il lavoro</div>
         <a href="#portfolio">Spettacolo</a>
         <a href="#portfolio">Eventi</a>
         <a href="#portfolio">Matrimoni</a>
@@ -343,7 +293,7 @@
     </div>
 
     <div class="foot-bottom">
-      <span>One Shot Photography · Via Cenisio 70, Milano</span>
+      <span>One Shot Photography &middot; Via Cenisio 70, Milano</span>
       <span>Anteprima realizzata da <a href="https://coodie.it" target="_blank" rel="noopener">Coodie.studio</a></span>
     </div>
   </div>
@@ -372,7 +322,7 @@
   });
 
   var chips=document.getElementById('chips');
-  var items=Array.prototype.slice.call(document.querySelectorAll('#gallery .item'));
+  var items=Array.prototype.slice.call(document.querySelectorAll('#gallery .product'));
   chips.addEventListener('click',function(e){
     var btn=e.target.closest('.chip'); if(!btn) return;
     chips.querySelectorAll('.chip').forEach(function(c){c.classList.remove('active')});
@@ -381,23 +331,23 @@
     items.forEach(function(s){s.classList.toggle('hide',f!=='all'&&s.dataset.cat!==f)});
   });
 
-  /* statement: le parole si accendono allo scroll (Meridian) */
+  /* banda acida: le parole si accendono allo scroll */
   var q=document.getElementById('quote');
   Array.prototype.forEach.call(q.querySelectorAll('span'),function(part){
-    var accent=part.classList.contains('accent');
+    var em=part.classList.contains('em');
     part.innerHTML=part.textContent.split(/\s+/).map(function(w){
-      return '<span class="w'+(accent?' accent':'')+'">'+w+'</span>';
+      return '<span class="w">'+(em?'<em>'+w+'</em>':w)+'</span>';
     }).join(' ');
   });
   var words=q.querySelectorAll('.w');
-  function litQuote(){
+  function lit(){
     var r=q.getBoundingClientRect(),vh=window.innerHeight;
     var p=(vh*0.82-r.top)/(r.height+vh*0.28);
     p=Math.max(0,Math.min(1,p));
     var n=Math.round(p*words.length);
     words.forEach(function(w,i){w.classList.toggle('lit',i<n)});
   }
-  window.addEventListener('scroll',litQuote,{passive:true}); litQuote();
+  window.addEventListener('scroll',lit,{passive:true}); lit();
 
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(en){
