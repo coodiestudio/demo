@@ -140,6 +140,14 @@ h2.display{font-size:clamp(2.1rem,5.2vw,4rem)}
 .step p{color:var(--ink-2);font-size:.93rem;margin-top:6px;max-width:64ch}
 .step .temp{text-align:right;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--cobalt);line-height:1.5}
 
+/* contrasto dei passaggi sul fondo cobalto */
+.cob .steps{border-top-color:var(--line-dark)}
+.cob .step{border-bottom-color:var(--line-dark)}
+.cob .step h3{color:#fff}
+.cob .step p{color:rgba(255,255,255,.8)}
+.cob .step .temp{color:var(--gold-soft)}
+.cob .step b{color:var(--gold-soft)}
+
 /* ── materiali ────────────────────────────────────────────── */
 .mats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:40px}
 .mat{border:1px solid var(--line-dark);padding:22px 18px}
